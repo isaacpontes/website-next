@@ -1,2 +1,7 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
+
+.has-background {
+  background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)), url("../public/cup-of-coffee-compressed.jpg") no-repeat fixed;
+  background-size: cover;
+}
