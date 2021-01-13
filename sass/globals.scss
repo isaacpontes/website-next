@@ -1,7 +1,15 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
 
 .has-background {
-  background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)), url("../public/cup-of-coffee-compressed.jpg") no-repeat fixed;
+  background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)), url("../public/cup-of-coffee-compressed.webp") no-repeat fixed;
   background-size: cover;
 }
