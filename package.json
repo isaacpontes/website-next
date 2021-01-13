@@ -5,11 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "css-build": "node-sass --omit-source-map-url sass/globals.scss styles/globals.css",
+    "css-watch": "npm run css-build -- --watch",
+    "css-start": "npm run css-watch"
   },
   "dependencies": {
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "node-sass": "^5.0.0"
   }
 }
