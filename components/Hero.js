@@ -15,12 +15,12 @@ const Hero = () => {
           <div className="buttons">
             <Link href="/services">
               <a className="button is-link">
-                Conhecer meu trabalho
+                Conheça meu trabalho
               </a>
             </Link>
             <Link href="/contato">
               <a className="button is-white is-outlined">
-                Entrar em contato
+                Entre em contato
               </a>
             </Link>
           </div>
