@@ -40,7 +40,7 @@ export default function Services() {
             </div>
             <div className="column is-one-quarter">
               <ServiceCard
-                cardIcon={ <FaChartLine/> }
+                cardIcon={ <IoRocket/> }
                 title="Landing Pages"
                 description="Impulsione suas campanhas, capture leads e aumente suas conversões através de páginas de destino eficientes."
               >
@@ -64,7 +64,7 @@ export default function Services() {
           <div className="columns">
             <div className="column is-one-quarter">
               <ServiceCard
-                cardIcon={ <IoRocket/> }
+                cardIcon={ <FaChartLine/> }
                 title="Otimização SEO"
                 description="Faça seu site ser encontrado pelas ferramentas de pesquisa e melhore o tráfego orgânico nas suas páginas."
               >
@@ -101,7 +101,7 @@ export default function Services() {
                 title="Alguma pergunta?"
                 description="Está perdido? Não sabe nem por onde começar? Entre em contato direto comigo e eu tiro todas as suas dúvidas."
               >
-                <a href="https://wa.me/55996057593" className="button is-link">
+                <a href="https://wa.me/5522996057593" className="button is-link">
                   Entrar em contato
                 </a>
               </ServiceCard>

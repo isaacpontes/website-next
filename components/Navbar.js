@@ -2,18 +2,16 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const Navbar = () => {
+  const toggleNavbarBurger = () => {
+    document.querySelector('.navbar-burger').classList.toggle('is-active');
+    document.querySelector('#navMenu').classList.toggle('is-active');
+  }
   useEffect(() => {
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    if ($navbarBurgers.length > 0) {
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-        });
-      });
-    }
+    const navbarBurger = document.querySelector('.navbar-burger');
+    navbarBurger.classList.remove('is-active');
+    document.querySelector('#navMenu').classList.remove('is-active');
+    navbarBurger.addEventListener('click', toggleNavbarBurger);
+    return () => navbarBurger.removeEventListener('click', toggleNavbarBurger);
   });
 
   return (
@@ -23,16 +21,15 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a
-          className="navbar-item"
-          href="https://bulma.io"
-        >
-          <img
-            src="https://bulma.io/images/bulma-logo-white.png"
-            width="112"
-            height="28"
-          />
-        </a>
+        <Link href="/">
+          <a className="navbar-item">
+            <img
+              src="https://bulma.io/images/bulma-logo-white.png"
+              width="112"
+              height="28"
+            />
+          </a>
+        </Link>
 
         <a
           role="button"
@@ -59,11 +56,11 @@ const Navbar = () => {
               Serviços
             </a>
           </Link>
-          <Link href="/portfolio">
+          {/* <Link href="/portfolio">
             <a className="navbar-item">
               Portfólio
             </a>
-          </Link>
+          </Link> */}
           <Link href="/contact">
             <a className="navbar-item">
               Contato
