@@ -18,7 +18,7 @@ const Hero = () => {
                 Conheça meu trabalho
               </a>
             </Link>
-            <Link href="/contato">
+            <Link href="/contact">
               <a className="button is-white is-outlined">
                 Entre em contato
               </a>
