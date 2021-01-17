@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi, I'm Isaac! :)
 
-## Getting Started
+I am a full stack web developer from São Fidélis, Rio de Janeiro, in Brazil. I love using technologies like PHP, HTML, CSS and Javascript to create awesome websites and applications that solve real world problems.
 
-First, run the development server:
+## Skills
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- **PHP:** I use it on a daily basis, specialy with the **Laravel** framework, for creating the backend of my projects, and sometimes even the frontend too. I have also worked with **Wordpress** in the past, and still do when I feel it's the right tool for the job.
+- **HTML and CSS:** As a full stack developer, I have experience with HTML and CSS. I'm always trying to write semantic markup and style it in an organized and elegant way, paying atention to **UI and UX** guidelines to make sure my pages are beautyful and effective. I sometimes also use a few CSS frameworks to help me, like **Bootstrap 4**, **Bulma**, and **Tailwind**.
+- **Javascript:** I recently started to delve deeper into the Javascript ecossystem, learning trending technologies like **React** and **Next.js**, and also **Node.js** and **Express** for building applications' backend. I am still a beginner, but I'm working hard and enjoying every new discovery.
+- **Database:** I normaly use **MySQL** for the databases of my applications and websites, but have used **PostgreSQL** in the past. I also recently started to study more about **NoSQL** with **MongoDB**.
+- **Web Server:** I have used **Apache** and **NGINX** for some of the applications I deployed at DigitalOcean in the past, but I still know only the basics and plan to learn more about them in the future.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contact me
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+If you want to talk to me you can send me an e-mail through [isaaclfp@outlook.com](mailto:isaaclfp@outlook.com). I am also available for hire :)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> "The things I once imagined would be my greatest achievements were only the first steps toward a future I can only begin to fathom." - Jace Beleren
