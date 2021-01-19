@@ -51,16 +51,16 @@ const Navbar = () => {
               Início
             </a>
           </Link>
+          <Link href="/portfolio">
+            <a className="navbar-item">
+              Portfólio
+            </a>
+          </Link>
           <Link href="/services">
             <a className="navbar-item">
               Serviços
             </a>
           </Link>
-          {/* <Link href="/portfolio">
-            <a className="navbar-item">
-              Portfólio
-            </a>
-          </Link> */}
           <Link href="/contact">
             <a className="navbar-item">
               Contato

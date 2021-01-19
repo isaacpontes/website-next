@@ -20,6 +20,7 @@ $family-sans-serif: "Ubuntu", sans-serif;
 @import "../node_modules/bulma/sass/form/tools.sass";
 @import "../node_modules/bulma/sass/form/input-textarea.sass";
 @import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/message.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
@@ -32,4 +33,15 @@ $family-sans-serif: "Ubuntu", sans-serif;
 
 .has-text-underlined {
   text-decoration: underline;
+}
+
+.is-partially-hidden {
+  max-height: 4em;
+  overflow: hidden;
+  transition: max-height 200ms ease-out;
+}
+
+.is-partially-hidden:hover {
+  max-height: 14em;
+  transition: max-height 200ms ease-in;
 }
