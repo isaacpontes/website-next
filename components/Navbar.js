@@ -20,6 +20,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="main navigation"
     >
+    <div className="container">
       <div className="navbar-brand">
         <Link href="/">
           <a className="navbar-item">
@@ -67,6 +68,7 @@ const Navbar = () => {
             </a>
           </Link>
         </div>
+      </div>
       </div>
     </nav>
   )

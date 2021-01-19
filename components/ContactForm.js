@@ -41,10 +41,8 @@ const ContactForm = () => {
           </div>
 
           <div className="field is-grouped">
-            <div className="control">
-              <button type="submit" value="Send" className="button is-primary">Enviar Email</button>
-            </div>
-            <div className="control">
+            <div className="buttons">
+              <button type="submit" value="Send" className="button is-link">Enviar Email</button>
               <a
                 href="https://wa.me/5522996057593"
                 className="button is-primary is-light"

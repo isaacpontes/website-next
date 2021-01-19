@@ -21,10 +21,10 @@ const Project = (props) => {
       </div>
       <footer className="card-footer">
         <div className="card-footer-item buttons">
-          <a className="button is-primary">
+          <a href={ props.demoLink } className="button is-link">
             Live Demo
           </a>
-          <a className="button is-link">
+          <a href={ props.githubLink } className="button is-dark">
             Source Code
           </a>
         </div>

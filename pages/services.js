@@ -21,7 +21,7 @@ export default function Services() {
                 title="Criação de Sites"
                 description="Tenha uma presença marcante na internet e garanta uma experiência única para seus clientes."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -33,7 +33,7 @@ export default function Services() {
                 title="E-Commerce"
                 description="Venda para todo o Brasil e aumente seu lucro através de uma loja virtual rápida e feita para as suas necessidades."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -44,7 +44,7 @@ export default function Services() {
                 title="Landing Pages"
                 description="Impulsione suas campanhas, capture leads e aumente suas conversões através de páginas de destino eficientes."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -55,7 +55,7 @@ export default function Services() {
                 title="Aplicações Web"
                 description="Transforme suas ideias em aplicações reais para serem usadas por qualquer pessoa e em qualquer lugar."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -68,7 +68,7 @@ export default function Services() {
                 title="Otimização SEO"
                 description="Faça seu site ser encontrado pelas ferramentas de pesquisa e melhore o tráfego orgânico nas suas páginas."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -79,7 +79,7 @@ export default function Services() {
                 title="Manutenção"
                 description="Já possui um site que precisa de ajustes? Sem problemas, posso te ajudar a colocar sua página de volta nos trilhos."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -90,7 +90,7 @@ export default function Services() {
                 title="Consultoria"
                 description="Já sabe o que quer mas ainda não por onde começar? Não se preocupe, posso te mostrar os melhores caminhos."
               >
-                <a href="/contact" className="button is-primary">
+                <a href="/contact" className="button is-link">
                   Saiba mais
                 </a>
               </ServiceCard>
@@ -101,7 +101,7 @@ export default function Services() {
                 title="Alguma pergunta?"
                 description="Está perdido? Não sabe nem por onde começar? Entre em contato direto comigo e eu tiro todas as suas dúvidas."
               >
-                <a href="https://wa.me/5522996057593" className="button is-link">
+                <a href="https://wa.me/5522996057593" className="button is-primary">
                   Entrar em contato
                 </a>
               </ServiceCard>

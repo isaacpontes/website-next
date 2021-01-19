@@ -5,6 +5,14 @@
 
 $family-sans-serif: "Ubuntu", sans-serif;
 
+$clear-blue: #70a6ec;
+$vivid-orange: #ff8818;
+$cool-black: #343536;
+
+$primary: $clear-blue;
+$link: $vivid-orange;
+$dark: $cool-black;
+
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/helpers/color.sass";
@@ -31,6 +39,16 @@ $family-sans-serif: "Ubuntu", sans-serif;
   background-size: cover;
 }
 
+.has-glass-background {
+  -webkit-backdrop-filter: blur(10px); /* Safari 9+ */
+  backdrop-filter: blur(10px); /* Chrome and Opera */
+  background-color: rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  border-radius: .25em;
+  padding: 1em;
+}
+
 .has-text-underlined {
   text-decoration: underline;
 }
@@ -44,4 +62,11 @@ $family-sans-serif: "Ubuntu", sans-serif;
 .is-partially-hidden:hover {
   max-height: 14em;
   transition: max-height 200ms ease-in;
+}
+
+@media screen and ( min-width: 1024px ) {
+  .has-glass-background {
+    max-width: 60%;
+    padding: 2.5em;
+  }
 }
