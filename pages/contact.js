@@ -51,7 +51,7 @@ const Contact = ({ avatar_url }) => {
                   </h5>
                   <p>
                     <a
-                      href="https://wa.me/5522996057593"
+                      href="https://t.me/isaacpontes_dev"
                       className="has-text-dark ml-5"
                       target="_blank"
                     >

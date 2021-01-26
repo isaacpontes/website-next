@@ -44,11 +44,11 @@ const ContactForm = () => {
             <div className="buttons">
               <button type="submit" value="Send" className="button is-link">Enviar Email</button>
               <a
-                href="https://wa.me/5522996057593"
+                href="https://t.me/isaacpontes_dev"
                 className="button is-primary is-light"
                 target="_blank"
               >
-                Chamar no WhatsApp
+                Conversar no Telegram
               </a>
             </div>
           </div>

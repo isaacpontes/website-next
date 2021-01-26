@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -24,11 +25,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         <Link href="/">
           <a className="navbar-item">
-            <img
-              src="https://bulma.io/images/bulma-logo-white.png"
-              width="112"
-              height="28"
-            />
+            <Image src="/logo_basic_color.svg" width={270} height={78} />
           </a>
         </Link>
 

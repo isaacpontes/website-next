@@ -5,13 +5,15 @@
 
 $family-sans-serif: "Ubuntu", sans-serif;
 
-$clear-blue: #70a6ec;
-$vivid-orange: #ff8818;
-$cool-black: #343536;
+$clear-primary: #30475e;
+$vivid-link: #f05454;
+$cool-dark: #222831;
+$the-light: #e8e8e8;
 
-$primary: $clear-blue;
-$link: $vivid-orange;
-$dark: $cool-black;
+$primary: $clear-primary;
+$link: $vivid-link;
+$dark: $cool-dark;
+$light: $the-light;
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
