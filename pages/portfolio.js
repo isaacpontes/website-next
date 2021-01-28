@@ -1,11 +1,14 @@
-import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa"
-import { IconContext } from "react-icons/lib"
+import Head from 'next/head';
 import ContactCard from "../components/ContactCard"
 import Project from "../components/Project"
 
 const Portfolio = ({ avatarUrl }) => {
   return (
     <section className="section has-background-light">
+      <Head>
+        <meta property="og:image" content={avatarUrl} />
+        <meta property="twitter:image" content={avatarUrl} />
+      </Head>
       <div className="container">
         <div className="columns">
           <div className="column is-one-quarter">
@@ -46,11 +49,11 @@ const Portfolio = ({ avatarUrl }) => {
                 </Project>
               </div>
             </div>
-            <article class="message is-primary">
-              <div class="message-header">
+            <article className="message is-primary">
+              <div className="message-header">
                 <p>Mais projetos em breve...</p>
               </div>
-              <div class="message-body">
+              <div className="message-body">
                 Eu ainda estou desenvolvendo novos projetos e soluções, e logo logo eles aparecerão por aqui.
               </div>
             </article>
