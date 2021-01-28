@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         <Link href="/">
           <a className="navbar-item">
-            <Image src="/logo_basic_color.svg" width={270} height={78} />
+            <Image src="/symbol_basic_color.svg" width={162} height={100} />
           </a>
         </Link>
 

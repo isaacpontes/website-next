@@ -37,7 +37,10 @@ $light: $the-light;
 @import "../node_modules/bulma/sass/layout/section.sass";
 
 .has-background {
-  background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5)), url("../public/cup-of-coffee-compressed.webp") no-repeat fixed;
+  background: linear-gradient(
+    to right,
+  rgba(31, 31, 31, 0.9),
+  rgba(31, 31, 31, 0.5)), url("../public/background.webp");
   background-size: cover;
 }
 
