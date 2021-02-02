@@ -1,5 +1,5 @@
 import ServiceCard from '../components/ServiceCard'
-import { FaChartLine, FaDesktop, FaHandsHelping, FaServer, FaShoppingCart, FaWhatsapp } from 'react-icons/fa'
+import { FaChartLine, FaDesktop, FaHandsHelping, FaServer, FaShoppingCart, FaTelegram } from 'react-icons/fa'
 import { IoConstruct, IoRocket } from 'react-icons/io5'
 
 export default function Services() {
@@ -97,11 +97,11 @@ export default function Services() {
             </div>
             <div className="column is-one-quarter">
               <ServiceCard
-                cardIcon={ <FaWhatsapp/> }
+                cardIcon={ <FaTelegram /> }
                 title="Alguma pergunta?"
                 description="Está perdido? Não sabe nem por onde começar? Entre em contato direto comigo e eu tiro todas as suas dúvidas."
               >
-                <a href="https://wa.me/5522996057593" className="button is-primary">
+                <a href="https://t.me/isaacpontes_dev" className="button is-primary">
                   Entrar em contato
                 </a>
               </ServiceCard>

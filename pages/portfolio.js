@@ -24,7 +24,7 @@ const Portfolio = ({ avatarUrl }) => {
             <div className="columns">
               <div className="column is-one-third">
                 <Project
-                  imageUrl="/screenshot.webp"
+                  imageUrl="/img/portfolio.webp"
                   title="Portfolio Pessoal"
                   description="Meu site pessoal com portfolio, blog e formulário para contato. Esse é o projeto que você está visualizando neste exato momento."
                   githubLink="https://github.com/isaacpontes/isaacpontes"
@@ -37,7 +37,7 @@ const Portfolio = ({ avatarUrl }) => {
               </div>
               <div className="column is-one-third">
                 <Project
-                  imageUrl="https://bulma.io/images/placeholders/1280x960.png"
+                  imageUrl="/img/1280x960.png"
                   title="SiGI"
                   description="Um sistema para gestão de igrejas. Conta com controle de membresia, finanças, impressão de relátorios e outras funcionalidades."
                   githubLink="https://github.com/isaacpontes/sigi_project"
@@ -46,6 +46,20 @@ const Portfolio = ({ avatarUrl }) => {
                   <span className="tag is-primary has-text-weight-bold m-1">Laravel</span>
                   <span className="tag is-primary has-text-weight-bold m-1">MySQL</span>
                   <span className="tag is-primary has-text-weight-bold m-1">Bootstrap 4</span>
+                </Project>
+              </div>
+              <div className="column is-one-third">
+                <Project
+                  imageUrl="/img/starwarsquiz.webp"
+                  title="Star Wars Quiz"
+                  description="Um jogo de perguntas e respostas sobre a saga Star Wars. Este projeto foi desenvolvido durante a Imersão React da Alura."
+                  demoLink="https://starwarsquiz.isaacpontes.vercel.app"
+                  githubLink="https://github.com/isaacpontes/starwarsquiz"
+                >
+                  <span className="tag is-primary has-text-weight-bold m-1">Javascript</span>
+                  <span className="tag is-primary has-text-weight-bold m-1">React</span>
+                  <span className="tag is-primary has-text-weight-bold m-1">Next.js</span>
+                  <span className="tag is-primary has-text-weight-bold m-1">Styled Components</span>
                 </Project>
               </div>
             </div>

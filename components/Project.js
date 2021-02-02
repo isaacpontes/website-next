@@ -1,9 +1,10 @@
+
 const Project = (props) => {
   return (
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3 is-partially-hidden">
-          <img src={ props.imageUrl } alt="Project Preview"/>
+          <img src={ props.imageUrl } alt="Project Preview" />
         </figure>
       </div>
       <div className="card-content">
@@ -21,7 +22,7 @@ const Project = (props) => {
       </div>
       <footer className="card-footer">
         <div className="card-footer-item buttons">
-          <a href={ props.demoLink } className="button is-link">
+          <a href={ props.demoLink } className="button is-link" target="_blank">
             Live Demo
           </a>
           <a href={ props.githubLink } className="button is-dark">
