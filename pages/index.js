@@ -1,5 +1,7 @@
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
 import Head from 'next/head';
+import AboutSection from '../components/AboutSection';
+import Portfolio from '../components/Portfolio';
 
 export async function getStaticProps() {
   const githubResponse = await fetch('https://api.github.com/users/isaacpontes')
@@ -19,7 +21,9 @@ export default function Home({ avatarUrl }) {
         <meta property="og:image" content={avatarUrl} />
         <meta property="twitter:image" content={avatarUrl} />
       </Head>
-      <Hero/>
+      <Hero />
+      <AboutSection />
+      <Portfolio />
     </>
   )
 }

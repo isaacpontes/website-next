@@ -1,29 +1,37 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="hero has-background is-dark is-fullheight-with-navbar">
+    <section className="hero is-white is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <div className="">
-            <h1 className="title is-4 is-size-2-tablet is-spaced">
-              Um <span className="has-text-link">desenvolvedor</span> <span className="is-block">em quem você <span className="has-text-underlined">pode confiar</span></span>
-            </h1>
-            <h2 className="subtitle is-6">
-              Olá, eu sou Isaac Pontes, um desenvolvedor web full stack. 
-              <span className="is-block">Eu construo sites e aplicações otimizados e amigáveis utilizando tecnologias web modernas.</span>
-            </h2>
-            <div className="buttons">
-              <Link href="/portfolio">
-                <a className="button is-link">
-                  Conheça meu trabalho
-                </a>
-              </Link>
-              <Link href="/contact">
-                <a className="button is-white is-outlined">
-                  Entre em contato
-                </a>
-              </Link>
+          <div className="columns is-vcentered">
+            <div className="column is-one-half">
+              <figure className="image is-1by1">
+                <Image src="/img/hero.svg" alt="Hero Image" width={480} height={480} />
+              </figure>
+            </div>
+            <div className="column is-one-half">
+              <h1 className="title is-4 is-size-2-tablet is-spaced has-text-dark">
+                Um <span className="has-text-primary">desenvolvedor</span> <span className="is-block">em quem você <span className="has-text-underlined">pode confiar</span></span>
+              </h1>
+              <h2 className="subtitle is-6 has-text-dark">
+                Olá, eu sou Isaac, um desenvolvedor web full-stack especializado em Node.js e PHP.
+                Eu construo sites e aplicações web altamente eficazes.
+              </h2>
+              <div className="buttons">
+                <Link href="/portfolio">
+                  <a className="button is-primary">
+                    Conheça meu trabalho
+                  </a>
+                </Link>
+                <Link href="/contato">
+                  <a className="button is-dark is-outlined">
+                    Entre em contato
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
