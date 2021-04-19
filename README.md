@@ -5,8 +5,8 @@ I am a full stack web developer from São Fidélis, Rio de Janeiro, in Brazil. M
 ## Skills
 
 - **Back End Technologies**: PHP and Laravel, Javascript with Node.js and Express, Ruby on Rails;
-- **Front End Technologies:** HTML5, CSS3, Javascript and React (wanting to try Vue);
-- **Database:** SQL with MariaDB/MySQL and PostgreSQL, NoSQL with MongoDB;
+- **Front End Technologies:** HTML5, CSS3, Javascript and React;
+- **Database:** SQL (MariaDB/MySQL), NoSQL (MongoDB);
 - **Server:** Linux, Debian, Apache and Nginx;
 - **Version Control:** Git and GitHub;
 
@@ -14,9 +14,6 @@ I am a full stack web developer from São Fidélis, Rio de Janeiro, in Brazil. M
 
 - Typescript;
 - Tests and TDD;
-- Docker;
-- CI/CD;
-- UI/UX Design;
 
 ## Contact me
 
