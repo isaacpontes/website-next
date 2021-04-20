@@ -1,3 +1,4 @@
+import ExperienceCard from '../components/ExperienceCard';
 import FormationCard from '../components/FormationCard';
 import ProfileCard from '../components/ProfileCard';
 import TechnologiesCard from '../components/TechnologiesCard';
@@ -14,6 +15,7 @@ export default function Sobre({ githubProfile }) {
             </div>
             <div className="column is-two-third">
               <TechnologiesCard />
+              <ExperienceCard />
               <FormationCard />
             </div>
           </div>

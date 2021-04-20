@@ -43,7 +43,7 @@ Projects.Project = ({
 
 function Projects() {
   return (
-    <div className="columns mt-6">
+    <div className="columns is-multiline mt-6">
       <Projects.Project
         imageUrl="/img/personalportfolio.webp"
         title="Portfolio Pessoal"
@@ -67,6 +67,13 @@ function Projects() {
         technologies={['Javascript', 'React', 'Next.js', 'Styled Components']}
         demoLink="https://starwarsquiz.isaacpontes.vercel.app"
         githubLink="https://github.com/isaacpontes/starwarsquiz"
+      />
+      <Projects.Project
+        imageUrl="/img/hawkins.webp"
+        title="Hawkins Design"
+        description="Site com blog e loja virtual para uma agência de design gráfico."
+        technologies={['PHP', 'WordPress', 'WooCommerce', 'MySQL']}
+        demoLink="https://hawkinsdesign.com.br"
       />
     </div>
   )
