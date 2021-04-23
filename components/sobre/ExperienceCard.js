@@ -7,7 +7,7 @@ function ExperienceCard() {
     <div className="card mb-5">
       <div className="card-content">
         <h5 className="title is-5">
-          My Professional Experience
+          Minha Experiência Profissional
         </h5>
         <div className="columns is-vcentered">
           <div className="column is-one-fifth">
@@ -19,16 +19,16 @@ function ExperienceCard() {
           </div>
           <div className="column is-four-fifths">
             <h6 className="title is-6">
-              Freelancer Developer
+              Desenvolvedor Freelancer
             </h6>
             <p className="subtitle is-7">
-              Period: 2020 - Present
+              Período: 2020 - Presente
             </p>
             <p>
-              I create fullstack websites and applications using mostly PHP, Node.js and React.
-              When it comes to data storage, I have experience with both SQL and NoSQL databases.
-              On my projects I go all the way from planning, design and prototyping, to 
-              development and deployment on production environments.
+              Eu crio sites e aplicações web full-stack utilizando, principalmente, PHP,
+              Node.js e React. Na área de bancos de dados possuo experiência com ambos SQL e NoSQL.
+              Em meus projetos eu passo cuidadosamente por todas as etapas, desde o planejamento, 
+              design e prototipação, até o desenvolvimento, teste e implantação em ambiente de produção.
             </p>
           </div>
         </div>
@@ -39,16 +39,16 @@ function ExperienceCard() {
           </div>
           <div className="column is-four-fifths">
             <h6 className="title is-6">
-              IT Technician at Prefeitura Municipal de São Fidélis
+              Técnico em Informática na Prefeitura Municipal de São Fidélis
             </h6>
             <p className="subtitle is-7">
               Period: 2016 - Present
             </p>
             <p>
-              I work with installation and configuration of Windows and Linux clients and servers,
-              management of computer networks, service desk and websites development and maintenance.
-              Some of the tools I work with are Nginx an IIS web servers, Microsoft Office, PowerShell,
-              PHP and WordPress.
+              Trabalho com instalação e configuração de clientes e servidores Windows e Linux,
+              gerenciamento de redes de computadores, suporte Service Desk e desenvolvimento e
+              manutenção de sites e aplicações web. Algumas das ferramentas com que trabalho são
+              servidores web Nginx e IIS, Microsoft Office, PowerShell, PHP e WordPress.
             </p>
           </div>
         </div>

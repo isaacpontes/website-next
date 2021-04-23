@@ -4,13 +4,13 @@ function FormationCard() {
     <div className="card mb-5">
       <div className="card-content">
         <h5 className="title is-5">
-          My Academic Achievements
+          Minha Trajetória Acadêmica
         </h5>
         <h6 className="title is-6">
-          Bachelor of Information Systems from Instituto Federal Fluminense
+          Bacharel em Sistemas de Informação pelo Instituto Federal Fluminense
         </h6>
         <p className="subtitle is-7">
-          Conclusion Year: 2017
+          Ano de Conclusão: 2017
         </p>
         <p>
           Durante o curso tive a oportunidade de entrar em contato com diversos tópicos,
@@ -25,7 +25,7 @@ function FormationCard() {
           Técnico em Informática pelo Instituto Federal Fluminense
         </h6>
         <p className="subtitle is-7">
-          Conclusion Year: 2012
+          Ano de Conclusão: 2012
         </p>
         <p>
           Eu já era familiarizado com a área de tecnologia da informação desde menino, mas

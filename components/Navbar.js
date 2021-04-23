@@ -26,11 +26,9 @@ Navbar.Brand = () => (
 )
 
 Navbar.Menu = () => (
-  <div id="navMenu" className="navbar-menu has-text-centered">
-    <div className="navbar-start">
-
-    </div>
-    <div className="is-flex">
+  <div id="navMenu" className="navbar-menu is-justify-content-space-between">
+    <div className=""></div>
+    <div className="is-flex is-justify-content-center">
       <Link href="/">
         <a className="navbar-item">
           Início
@@ -46,8 +44,13 @@ Navbar.Menu = () => (
           Contato
         </a>
       </Link>
+      <Link href="/blog">
+        <a className="navbar-item">
+          Blog
+        </a>
+      </Link>
     </div>
-    <div className="navbar-end">
+    <div className="is-flex is-justify-content-center">
       <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
         <FiGithub />
       </a>
@@ -79,7 +82,7 @@ function Navbar() {
 
   return (
     <nav 
-      className="navbar is-transparent"
+      className="navbar is-light is-transparent"
       role="navigation"
       aria-label="main navigation"
     >

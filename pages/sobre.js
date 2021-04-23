@@ -1,13 +1,13 @@
-import ExperienceCard from '../components/ExperienceCard';
-import FormationCard from '../components/FormationCard';
-import ProfileCard from '../components/ProfileCard';
-import TechnologiesCard from '../components/TechnologiesCard';
+import ExperienceCard from '../components/sobre/ExperienceCard';
+import FormationCard from '../components/sobre/FormationCard';
+import ProfileCard from '../components/sobre/ProfileCard';
+import TechnologiesCard from '../components/sobre/TechnologiesCard';
 
 
 export default function Sobre({ githubProfile }) {
   return (
     <>
-      <section className="section has-background-white">
+      <section className="section has-background-light">
         <div className="container">
           <div className="columns">
             <div className="column is-one-third">

@@ -3,14 +3,12 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="hero is-white is-fullheight-with-navbar">
+    <section className="hero is-light is-fullheight-with-navbar is-gradient">
       <div className="hero-body">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-one-half">
-              <figure className="image is-1by1">
-                <Image src="/img/hero.svg" alt="Hero Image" width={480} height={480} />
-              </figure>
+              <Image src="/img/hero.svg" alt="Hero Image" width={480} height={480} />
             </div>
             <div className="column is-one-half">
               <h1 className="title is-4 is-size-2-tablet is-spaced has-text-dark">

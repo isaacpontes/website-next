@@ -4,7 +4,7 @@ function ProfileCard({ githubProfile }) {
   return (
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image is-square">
           <img src={ githubProfile.avatar_url } alt="My GitHub Avatar"/>
         </figure>
       </div>

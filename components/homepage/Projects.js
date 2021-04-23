@@ -4,7 +4,7 @@ Projects.Project = ({
   <div className="column is-one-third">
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3 is-partially-hidden">
+        <figure className="image is-partially-hidden">
           <img src={ imageUrl } alt="Project Preview" />
         </figure>
       </div>
