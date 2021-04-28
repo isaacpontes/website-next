@@ -3,10 +3,15 @@
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 $family-sans-serif: "Nunito", sans-serif;
 
 $clear-primary: hsl(263, 60%, 48%);
-$vivid-link: hsl(180, 66%, 63%);
+$vivid-link: hsl(34, 90%, 50%);
+// $vivid-link: hsl(180, 66%, 63%);
 $cool-dark: hsl(216, 18%, 16%);
 $the-light: hsl(0, 0%, 91%);
 
@@ -21,7 +26,7 @@ $speed: 225ms;
 
 $navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
-$navbar-item-img-max-height: 2.25rem;
+// $navbar-item-img-max-height: 2.25rem;
 
 $card-radius: 0px;
 
@@ -34,6 +39,7 @@ $card-radius: 0px;
 @import "../node_modules/bulma/sass/helpers/visibility.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
 @import "../node_modules/bulma/sass/elements/icon.sass";
 @import "../node_modules/bulma/sass/elements/image.sass";
 @import "../node_modules/bulma/sass/elements/tag.sass";
@@ -48,6 +54,10 @@ $card-radius: 0px;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 
+hr {
+  background-color: $dark;
+}
+
 a,
 .button {
   transition: all $speed $easing;
@@ -56,14 +66,6 @@ a,
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
-}
-
-.has-background {
-  background: linear-gradient(
-    to right,
-  rgba(31, 31, 31, 0.9),
-  rgba(31, 31, 31, 0.5)), url("../public/img/background.webp");
-  background-size: cover;
 }
 
 .has-border {
@@ -83,6 +85,15 @@ a,
 .is-partially-hidden:hover {
   max-height: 14em;
   transition: max-height 200ms ease-in;
+}
+
+.is-post-cover-image {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  transition: .2s;
+}
+
+.is-post-cover-image:hover {
+  box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
 }
 
 #honeyPotField {

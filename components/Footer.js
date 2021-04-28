@@ -1,11 +1,11 @@
 import { FiCoffee, FiHeart } from "react-icons/fi"
 
-const Footer = () => {
+export default function Footer() {
     return (
         <footer className="footer has-background-dark py-5">
             <div className="content has-text-light has-text-centered">
                 <p>
-                    Feito com <FiHeart />, <FiCoffee /> e
+                    Made with <FiHeart />, <FiCoffee /> and
                     {' '}
                     <a
                       href="https://bulma.io/"
@@ -18,5 +18,3 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer;

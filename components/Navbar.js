@@ -3,6 +3,34 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { FiGithub, FiInstagram, FiLinkedin, FiSend } from "react-icons/fi";
 
+export default function Navbar() {
+  const toggleNavbarBurger = () => {
+    document.querySelector('.navbar-burger').classList.toggle('is-active');
+    document.querySelector('#navMenu').classList.toggle('is-active');
+  }
+  useEffect(() => {
+    const navbarBurger = document.querySelector('.navbar-burger');
+    navbarBurger.classList.remove('is-active');
+    document.querySelector('#navMenu').classList.remove('is-active');
+    navbarBurger.addEventListener('click', toggleNavbarBurger);
+    return () => navbarBurger.removeEventListener('click', toggleNavbarBurger);
+  });
+
+  return (
+    <nav 
+      className="navbar is-transparent"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="container">
+        <Navbar.Brand />
+
+        <Navbar.Menu />
+      </div>
+    </nav>
+  )
+}
+
 Navbar.Brand = () => (
   <div className="navbar-brand">
     <Link href="/">
@@ -23,25 +51,24 @@ Navbar.Brand = () => (
       <span aria-hidden="true"></span>
     </a>
   </div>
-)
+);
 
 Navbar.Menu = () => (
-  <div id="navMenu" className="navbar-menu is-justify-content-space-between">
-    <div className=""></div>
-    <div className="is-flex is-justify-content-center">
+  <div id="navMenu" className="navbar-menu">
+    <div className="navbar-start">
       <Link href="/">
         <a className="navbar-item">
-          Início
+          Home
         </a>
       </Link>
-      <Link href="/sobre">
+      <Link href="/about">
         <a className="navbar-item">
-          Sobre
+          About
         </a>
       </Link>
-      <Link href="/contato">
+      <Link href="/contact">
         <a className="navbar-item">
-          Contato
+          Contact
         </a>
       </Link>
       <Link href="/blog">
@@ -50,7 +77,7 @@ Navbar.Menu = () => (
         </a>
       </Link>
     </div>
-    <div className="is-flex is-justify-content-center">
+    <div className="navbar-end">
       <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
         <FiGithub />
       </a>
@@ -65,34 +92,4 @@ Navbar.Menu = () => (
       </a>
     </div>
   </div>
-)
-
-function Navbar() {
-  const toggleNavbarBurger = () => {
-    document.querySelector('.navbar-burger').classList.toggle('is-active');
-    document.querySelector('#navMenu').classList.toggle('is-active');
-  }
-  useEffect(() => {
-    const navbarBurger = document.querySelector('.navbar-burger');
-    navbarBurger.classList.remove('is-active');
-    document.querySelector('#navMenu').classList.remove('is-active');
-    navbarBurger.addEventListener('click', toggleNavbarBurger);
-    return () => navbarBurger.removeEventListener('click', toggleNavbarBurger);
-  });
-
-  return (
-    <nav 
-      className="navbar is-light is-transparent"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="container">
-        <Navbar.Brand />
-
-        <Navbar.Menu />
-      </div>
-    </nav>
-  )
-}
-
-export default Navbar;
+);

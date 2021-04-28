@@ -1,4 +1,4 @@
-import Avatar from '../Avatar'
+import Avatar from './Avatar'
 import DateFormatter from '../DateFormatter'
 import CoverImage from './CoverImage'
 import Link from 'next/link'
@@ -27,10 +27,10 @@ export default function PostPreview({
           <a className="has-text-primary">{title}</a>
         </Link>
       </h3>
-      <div className="subtitle is-6 mb-4">
+      <div className="subtitle is-7 mb-4">
         <DateFormatter dateString={date} />
       </div>
-      <p className="subtitle mb-4">{excerpt}</p>
+      <p className="subtitle is-6 mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
   )

@@ -1,5 +1,5 @@
-import Hero from '../components/homepage/Hero';
 import Head from 'next/head';
+import HeroSection from "../components/homepage/HeroSection";
 import AboutSection from '../components/homepage/AboutSection';
 import Portfolio from '../components/homepage/Portfolio';
 import BlogSection from '../components/homepage/BlogSection';
@@ -31,10 +31,11 @@ export default function Home({ avatarUrl, allPosts }) {
   return (
     <>
       <Head>
+        <title>Isaac Pontes | Desenvolvedor Full Stack</title>
         <meta property="og:image" content={avatarUrl} />
         <meta property="twitter:image" content={avatarUrl} />
       </Head>
-      <Hero />
+      <HeroSection />
       <AboutSection />
       <Portfolio />
       <BlogSection posts={lastPosts} />

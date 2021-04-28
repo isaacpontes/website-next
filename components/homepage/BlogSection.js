@@ -1,21 +1,27 @@
+import Link from "next/link";
 import PostPreview from "../blog/PostPreview";
+import Columns from "../common/Columns";
+import Container from "../common/Container";
+import Section from "../common/Section";
 
 function BlogSection({ posts }) {
   return (
-    <section className="section has-background-white is-gradient">
-      <div className="container is-max-desktop has-text-centered mb-6">
-        <h2 className="title is-spaced">
-          Tech Tips
-        </h2>
-        <p>
-          Meu blog onde compartilho um pouco dos conhecimentos que adquiri ao longo da minha
-          carreira através de artigos, tutoriais e dicas de tecnologia e programação em geral.
-          Aqui você vai encontrar muito sobre algorítmo e lógica, linguagens de programação,
-          desenvolvimento web, sistemas Linux e o mundo Open Source, e muito mais.
-        </p>
-      </div>
-      <div className="container">
-        <div className="columns is-multiline">
+    <Section color="white">
+      <Container>
+        <Columns hcenter={true}>
+          <Columns.Column size={8}>
+            <h2 className="title has-text-primary has-text-centered is-spaced">
+              Blog
+            </h2>
+            <p className="has-text-centered mb-6">
+            A project that came up as a way of giving back for everything I learned through the internet
+            community. In it I share a little of my knowledge through articles, tutorials and technology
+            tips in general. Here you will find content about algorithm, logic and programming languages,
+            web development and much more.
+            </p>
+          </Columns.Column>
+        </Columns>
+        <Columns multiline={true}>
           {posts.map((post) => (
             <PostPreview
               key={post.slug}
@@ -26,10 +32,17 @@ function BlogSection({ posts }) {
               slug={post.slug}
               excerpt={post.excerpt}
             />
-        ))}
-        </div>
+          ))}
+        </Columns>
+      </Container>
+      <div className="buttons is-centered mt-6">
+        <Link href="/blog">
+          <a className="button is-primary">
+            Read More
+          </a>
+        </Link>
       </div>
-    </section>
+    </Section>
   )
 }
 
