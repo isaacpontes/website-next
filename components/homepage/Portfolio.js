@@ -3,19 +3,22 @@ import Container from "../common/Container";
 import Columns from "../common/Columns";
 import Projects from "./Projects";
 import Link from "next/link";
+import { useIntl } from "react-intl";
 
-function Portfolio() {
+export default function Portfolio() {
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
   return (
     <Section id="portfolio" color="light">
       <Container extraClasses="has-text-centered">
         <Columns hcenter={true}>
           <Columns.Column size={8}>
             <h2 className="title is-spaced">
-              Featured Projects
+              {_f("portfolioTitle")}
             </h2>
             <p className="mb-5">
-            Below you can find some really cool projects I developed and the tools I used.
-            There are also links to the live demos and the source code of the open source projects.
+              {_f("portfolioText")}
             </p>
           </Columns.Column>
         </Columns>
@@ -25,10 +28,10 @@ function Portfolio() {
       <Container extraClasses="mt-6">
         <article className="message is-link">
           <div className="message-body">
-            I am working on new projects and they will soon be here too. You can find all my projects
+            {_f("portfolioMessage")}
             {' '}
             <Link href="/portfolio">
-              <a>here</a>
+              <a>{_f("portfolioLink")}</a>
             </Link>
             .
           </div>
@@ -37,5 +40,3 @@ function Portfolio() {
     </Section>
   )
 }
-
-export default Portfolio;

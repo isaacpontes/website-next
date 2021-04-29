@@ -4,6 +4,28 @@ import AboutSection from '../components/homepage/AboutSection';
 import Portfolio from '../components/homepage/Portfolio';
 import BlogSection from '../components/homepage/BlogSection';
 import { getAllPosts } from '../lib/api';
+import { useIntl } from "react-intl";
+
+export default function Home({ avatarUrl, allPosts }) {
+  const lastPosts = allPosts.slice(0, 3);
+
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
+  return (
+    <>
+      <Head>
+        <title>{_f("siteTitle")}</title>
+        <meta property="og:image" content={avatarUrl} />
+        <meta property="twitter:image" content={avatarUrl} />
+      </Head>
+      <HeroSection />
+      <AboutSection />
+      <Portfolio />
+      <BlogSection posts={lastPosts} />
+    </>
+  )
+}
 
 export async function getStaticProps() {
   const allPosts = getAllPosts([
@@ -20,25 +42,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      avatarUrl: githubResponse.avatar_url,
+      avatarUrl: "githubResponse.avatar_url",
       allPosts
     }
   }
-}
-
-export default function Home({ avatarUrl, allPosts }) {
-  const lastPosts = allPosts.slice(0, 3);
-  return (
-    <>
-      <Head>
-        <title>Isaac Pontes | Desenvolvedor Full Stack</title>
-        <meta property="og:image" content={avatarUrl} />
-        <meta property="twitter:image" content={avatarUrl} />
-      </Head>
-      <HeroSection />
-      <AboutSection />
-      <Portfolio />
-      <BlogSection posts={lastPosts} />
-    </>
-  )
 }
