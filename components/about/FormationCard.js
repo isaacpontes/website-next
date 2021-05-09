@@ -1,37 +1,33 @@
+import { useIntl } from 'react-intl';
+
 export default function FormationCard() {
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
   return (
     <div className="card mb-5">
       <div className="card-content">
         <h5 className="title is-5">
-          My Academic Achievements
+          {_f("myAcademicAchievements")}
         </h5>
         <h6 className="title is-6">
-          Bachelor in Information Systems by the Fluminense Federal Institute
+          {`${_f("bachelor")} ${_f("by")} ${_f("iff")}`}
         </h6>
         <p className="subtitle is-7">
-          Conclusion Year: 2017
+          {_f("conclusionYear")}: 2017
         </p>
         <p>
-          During the course I had the opportunity to get familiar with various topics,
-          both in the area of software development, such as data structures, object-oriented
-          programming, etc., as well as related areas, such as mathematics and administration.
-          Despite going quickly through some more advanced topics such as artificial
-          intelligence and internet of things, when I finished the course I chose to go deeper
-          into the development of web applications.
+          {_f("bachelorDescription")}
         </p>
-        <hr/>
+        <hr />
         <h6 className="title is-6">
-          IT Technician by the Fluminense Federal Institute
+          {`${_f("itTechnician")} ${_f("by")} ${_f("iff")}`}
         </h6>
         <p className="subtitle is-7">
-          Conclusion Year: 2012
+          {_f("conclusionYear")}: 2012
         </p>
         <p>
-          I was already familiar with the information technology area since I was young,
-          but this was my first significant academic experience. Despite being primarily
-          focused on the infrastructure area, the course also covered a little bit about
-          algorithms and programming languages, which caught up my attention and later on
-          led me to the information systems degree.
+          {_f("technicianDescription")}
         </p>
       </div>
     </div>

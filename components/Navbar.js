@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { FiGithub, FiInstagram, FiLinkedin, FiSend } from "react-icons/fi";
+import { useIntl } from 'react-intl';
 
 export default function Navbar() {
   const toggleNavbarBurger = () => {
@@ -17,7 +18,7 @@ export default function Navbar() {
   });
 
   return (
-    <nav 
+    <nav
       className="navbar is-transparent"
       role="navigation"
       aria-label="main navigation"
@@ -53,43 +54,48 @@ Navbar.Brand = () => (
   </div>
 );
 
-Navbar.Menu = () => (
-  <div id="navMenu" className="navbar-menu">
-    <div className="navbar-start">
-      <Link href="/">
-        <a className="navbar-item">
-          Home
+Navbar.Menu = () => {
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
+  return (
+    <div id="navMenu" className="navbar-menu">
+      <div className="navbar-start">
+        <Link href="/">
+          <a className="navbar-item">
+            {_f("navbarHome")}
+          </a>
+        </Link>
+        <Link href="/about">
+          <a className="navbar-item">
+            {_f("navbarAbout")}
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a className="navbar-item">
+            {_f("navbarContact")}
+          </a>
+        </Link>
+        <Link href="/blog">
+          <a className="navbar-item">
+            {_f("navbarBlog")}
+          </a>
+        </Link>
+      </div>
+      <div className="navbar-end">
+        <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
+          <FiGithub />
         </a>
-      </Link>
-      <Link href="/about">
-        <a className="navbar-item">
-          About
+        <a href="https://www.linkedin.com/in/isaac-pontes/" className="navbar-item" target="_blank">
+          <FiLinkedin />
         </a>
-      </Link>
-      <Link href="/contact">
-        <a className="navbar-item">
-          Contact
+        <a href="https://www.instagram.com/isaac.lfp/" className="navbar-item" target="_blank">
+          <FiInstagram />
         </a>
-      </Link>
-      <Link href="/blog">
-        <a className="navbar-item">
-          Blog
+        <a href="https://t.me/isaacpontes_dev" className="navbar-item" target="_blank">
+          <FiSend />
         </a>
-      </Link>
+      </div>
     </div>
-    <div className="navbar-end">
-      <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
-        <FiGithub />
-      </a>
-      <a href="https://www.linkedin.com/in/isaac-pontes/" className="navbar-item" target="_blank">
-        <FiLinkedin />
-      </a>
-      <a href="https://www.instagram.com/isaac.lfp/" className="navbar-item" target="_blank">
-        <FiInstagram />
-      </a>
-      <a href="https://t.me/isaacpontes_dev" className="navbar-item" target="_blank">
-        <FiSend />
-      </a>
-    </div>
-  </div>
-);
+  );
+};

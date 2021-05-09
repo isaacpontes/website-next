@@ -27,8 +27,8 @@ export default function Home({ avatarUrl, allPosts }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
+export async function getStaticProps({ locale }) {
+  const allPosts = getAllPosts(locale, [
     'title',
     'date',
     'slug',

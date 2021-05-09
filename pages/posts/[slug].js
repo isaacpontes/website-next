@@ -51,8 +51,8 @@ export default function Post({ post, morePosts, preview }) {
   )
 }
 
-export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+export async function getStaticProps({ params, locale }) {
+  const post = getPostBySlug(locale, params.slug, [
     'title',
     'date',
     'slug',
@@ -73,17 +73,25 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+export async function getStaticPaths({ locales }) {
+  const paths = [];
 
-  return {
-    paths: posts.map((post) => {
-      return {
+  locales.forEach((locale) => {
+    const localePosts = getAllPosts(locale, ['slug']);
+
+    localePosts.forEach((post) => {
+      paths.push({
         params: {
           slug: post.slug,
         },
-      }
-    }),
+        locale: locale,
+      });
+    });
+
+  });
+
+  return {
+    paths,
     fallback: false,
   }
 }

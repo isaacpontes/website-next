@@ -6,13 +6,16 @@ import ExperienceCard from '../components/about/ExperienceCard';
 import FormationCard from '../components/about/FormationCard';
 import ProfileCard from '../components/about/ProfileCard';
 import TechnologiesCard from '../components/about/TechnologiesCard';
-
+import { useIntl } from 'react-intl';
 
 export default function About({ githubProfile }) {
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
   return (
     <>
       <Head>
-        <title>Isaac Pontes | About</title>
+        <title>{_f("siteTitle")}</title>
       </Head>
       <Section color="white">
         <Container>

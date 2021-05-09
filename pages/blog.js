@@ -5,15 +5,19 @@ import Head from "next/head";
 import Section from "../components/common/Section";
 import HeroPost from "../components/blog/HeroPost";
 import MoreStories from "../components/blog/MoreStories";
+import { useIntl } from "react-intl";
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1);
+
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
 
   return (
     <>
       <Head>
-        <title>Isaac Pontes | Blog</title>
+        <title>{_f("siteTitle")}</title>
       </Head>
       <Section color="white">
         <Container>
@@ -35,8 +39,8 @@ export default function Index({ allPosts }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
+export async function getStaticProps({ locale }) {
+  const allPosts = getAllPosts(locale, [
     'title',
     'date',
     'slug',

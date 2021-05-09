@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useIntl } from 'react-intl';
 
 export default function TechnologiesCard() {
   const technologies = [
@@ -16,14 +17,17 @@ export default function TechnologiesCard() {
     { name: 'Linux', iconUrl: '/assets/img/debian.svg' },
   ];
 
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
   return (
     <div className="card mb-5">
       <div className="card-content">
         <h6 className="title is-5">
-          Technologies I Use Often
+          {_f("technologiesIUseOften")}
         </h6>
         <div className="columns is-mobile is-multiline">
-          { technologies.map((technology, key) => {
+          {technologies.map((technology, key) => {
             return (
               <div key={key} className="column is-4-mobile is-2-tablet">
                 <div className="mt-3">
