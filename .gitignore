@@ -35,4 +35,3 @@ yarn-error.log*
 
 # configs and local generated files
 /styles/globals.css
-.editorconfig

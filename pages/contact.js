@@ -1,39 +1,29 @@
 import Head from 'next/head';
-import ContactCard from "../components/ContactCard"
-import ContactForm from "../components/ContactForm"
+import Columns from '../components/common/Columns';
+import Container from '../components/common/Container';
+import Section from '../components/common/Section';
+import ContactForm from '../components/ContactForm';
+import { useIntl } from 'react-intl';
 
-const Contact = ({ avatarUrl }) => {
+export default function Contact({ avatarUrl }) {
+  const { formatMessage } = useIntl();
+  const _f = (id) => formatMessage({ id });
+
   return (
-    <section className="section has-background-light">
+    <Section color="white">
       <Head>
+        <title>{_f("siteTitle")}</title>
         <meta property="og:image" content={avatarUrl} />
         <meta property="twitter:image" content={avatarUrl} />
       </Head>
-      <div className="container">
-        <div className="columns">
-          <div className="column is-one-quarter">
-            <ContactCard avatarUrl={avatarUrl} />
-          </div>
-          <div className="column">
-            <ContactForm/>
-          </div>
-        </div>
-      </div>
-    </section>
+      <Container>
+        <Columns hcenter={true}>
+          <Columns.Column size={6}>
+            <ContactForm />
+          </Columns.Column>
+        </Columns>
+      </Container>
+    </Section>
   )
 }
 
-
-export async function getStaticProps() {
-  const githubResponse = await fetch('https://api.github.com/users/isaacpontes')
-    .then(res => res.json());
-
-  return {
-    props: {
-      avatarUrl: githubResponse.avatar_url,
-    }
-  }
-}
-
-
-export default Contact
