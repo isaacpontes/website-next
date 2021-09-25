@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import HeroSection from "../components/homepage/HeroSection";
 import AboutSection from '../components/homepage/AboutSection';
@@ -5,12 +6,18 @@ import Portfolio from '../components/homepage/Portfolio';
 import BlogSection from '../components/homepage/BlogSection';
 import { getAllPosts } from '../lib/api';
 import { useIntl } from "react-intl";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home({ avatarUrl, allPosts }) {
   const lastPosts = allPosts.slice(0, 3);
 
   const { formatMessage } = useIntl();
   const _f = (id) => formatMessage({ id });
+
+  useEffect(() => {
+    Aos.init();
+  });
 
   return (
     <>

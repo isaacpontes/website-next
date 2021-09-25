@@ -5,7 +5,7 @@ export default function FormationCard() {
   const _f = (id) => formatMessage({ id });
 
   return (
-    <div className="card mb-5">
+    <div className="card mb-5" data-aos="fade-up">
       <div className="card-content">
         <h5 className="title is-5">
           {_f("myAcademicAchievements")}

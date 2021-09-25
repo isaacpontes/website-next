@@ -10,16 +10,16 @@ export default function Portfolio() {
   const _f = (id) => formatMessage({ id });
 
   return (
-    <Section id="portfolio" color="light">
+    <Section id="portfolio" color="white">
       <Container extraClasses="has-text-centered">
         <Columns hcenter={true}>
           <Columns.Column size={8}>
-            <h2 className="title is-spaced">
+            <h2 className="title is-2 has-title-decoration">
               {_f("portfolioTitle")}
             </h2>
-            <p className="mb-5">
+            {/* <p className="mb-5">
               {_f("portfolioText")}
-            </p>
+            </p> */}
           </Columns.Column>
         </Columns>
 

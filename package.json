@@ -4,26 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "css-build": "node-sass --omit-source-map-url sass/globals.scss styles/globals.css",
     "css-watch": "npm run css-build -- --watch",
     "css-start": "npm run css-watch"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "classnames": "^2.3.1",
-    "date-fns": "^2.21.1",
-    "gray-matter": "^4.0.2",
-    "next": "10.0.5",
+    "date-fns": "^2.22.1",
+    "gray-matter": "^4.0.3",
+    "next": "^11.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.1.0",
-    "react-intl": "^5.17.1",
+    "react-icons": "^4.2.0",
+    "react-intl": "^5.20.4",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   },
   "devDependencies": {
-    "bulma": "^0.9.1",
+    "bulma": "^0.9.3",
     "node-sass": "^5.0.0"
   }
 }

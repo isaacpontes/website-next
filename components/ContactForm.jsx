@@ -1,5 +1,5 @@
 import { IconContext } from "react-icons/lib";
-import { FiMail, FiUser } from "react-icons/fi";
+import { FiMail, FiSend, FiUser } from "react-icons/fi";
 import { useIntl } from 'react-intl';
 
 export default function ContactForm() {
@@ -10,11 +10,11 @@ export default function ContactForm() {
     <>
       <div className="card">
         <div className="card-header">
-          <h5 className="card-header-title is-5">
-            {_f("messageMe")}
-          </h5>
         </div>
         <div className="card-content">
+          <h5 className="title is-5">
+            {_f("messageMe")}
+          </h5>
           <form action="https://app.99inbound.com/api/e/pscoqQY5" method="POST" target="_blank">
             <IconContext.Provider value={{ className: "has-text-primary" }}>
               <div className="field">
@@ -91,9 +91,10 @@ export default function ContactForm() {
                 </button>
                 <a
                   href="https://t.me/isaacpontes_dev"
-                  className="button is-primary is-light"
+                  className="button is-link is-light"
                   target="_blank"
                 >
+                  <FiSend className="mr-2" />
                   {_f("telegram")}
                 </a>
               </div>

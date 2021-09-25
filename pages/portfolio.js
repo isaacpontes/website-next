@@ -1,15 +1,11 @@
-import Head from 'next/head';
 import Columns from '../components/common/Columns';
 import Container from '../components/common/Container';
 import Section from '../components/common/Section';
-import ExperienceCard from '../components/about/ExperienceCard';
-import FormationCard from '../components/about/FormationCard';
 import ProfileCard from '../components/about/ProfileCard';
-// import TechnologiesCard from '../components/about/TechnologiesCard';
 import { useIntl } from 'react-intl';
-import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function About({ githubProfile }) {
   const { formatMessage } = useIntl();
@@ -21,9 +17,6 @@ export default function About({ githubProfile }) {
 
   return (
     <>
-      <Head>
-        <title>{_f("siteTitle")}</title>
-      </Head>
       <Section color="white">
         <Container>
           <Columns>
@@ -32,9 +25,6 @@ export default function About({ githubProfile }) {
             </Columns.Column>
 
             <Columns.Column size={9}>
-              {/* <TechnologiesCard /> */}
-              <ExperienceCard />
-              <FormationCard />
             </Columns.Column>
           </Columns>
         </Container>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Section from '../common/Section';
 import Container from '../common/Container';
 import Columns from '../common/Columns';
 import { useIntl } from "react-intl";
@@ -9,45 +10,62 @@ export default function HeroSection() {
   const _f = (id) => formatMessage({ id });
 
   return (
-    <section className="hero is-white is-fullheight-with-navbar is-gradient">
-      <div className="hero-body">
-        <Container>
-          <Columns hcenter={true}>
-            <Columns.Column size={7}>
+    <Section color="white">
+      <Container>
+        <Columns vcenter={true}>
+          <Columns.Column size={6}>
 
-              <div className="is-flex is-justify-content-center">
-                <Image src="/assets/img/hero.svg" alt="Hero Image" width={280} height={280} />
-              </div>
+            <div
+              className="is-flex is-justify-content-center"
+              data-aos="flip-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <Image src="/assets/img/hero.svg" alt="Hero Image" width={420} height={420} />
+            </div>
 
-              <h1 className="title is-4 is-size-2-tablet is-spaced has-text-dark has-text-centered">
-                {_f("headlineA")}
-                <span className="has-text-primary">
-                  {_f("headlineB")}
-                </span>
-                {_f("headlineC")}
-                <span className="has-text-underlined">{_f("headlineD")}</span>
-              </h1>
+          </Columns.Column>
+          <Columns.Column size={6}>
+            <h1
+              className="title is-size-2-tablet is-size-1-desktop has-text-dark"
+              data-aos="flip-up"
+              data-aos-delay="500"
+              data-aos-duration="800"
+            >
+              {_f("headlineA")}
+              <span className="has-text-primary">
+              {_f("headlineB")}
+              </span>
+            </h1>
 
-              <h2 className="subtitle is-6 has-text-dark has-text-centered">
-                {_f("subHeadline")}
-              </h2>
+            <h2
+              className="subtitle is-6 my-6 has-text-dark"
+              data-aos="flip-up"
+              data-aos-delay="650"
+              data-aos-duration="800"
+            >
+              {_f("subHeadline")}
+            </h2>
 
-              <div className="buttons is-centered">
-                <Link href="#about">
-                  <a className="button is-primary">
-                    {_f("knowMyWork")}
-                  </a>
-                </Link>
-                <Link href="/contato">
-                  <a className="button is-dark is-outlined">
-                    {_f("contactMe")}
-                  </a>
-                </Link>
-              </div>
-            </Columns.Column>
-          </Columns>
-        </Container>
-      </div>
-    </section>
+            <div
+              className="buttons"
+              data-aos="flip-up"
+              data-aos-delay="800"
+            >
+              <Link href="#about">
+                <a className="button is-primary">
+                {_f("knowMyWork")}
+                </a>
+              </Link>
+              <Link href="/contato">
+                <a className="button is-dark is-outlined">
+                {_f("contactMe")}
+                </a>
+              </Link>
+            </div>
+          </Columns.Column>
+        </Columns>
+      </Container>
+    </Section>
   )
 }

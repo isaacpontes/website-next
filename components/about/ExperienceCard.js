@@ -7,7 +7,7 @@ export default function ExperienceCard() {
   const _f = (id) => formatMessage({ id });
 
   return (
-    <div className="card mb-5">
+    <div className="card mb-5" data-aos="fade-up" data-aos-delay="150">
       <div className="card-content">
         <h5 className="title is-5">
           {_f("myProfessionalExperience")}
@@ -16,7 +16,7 @@ export default function ExperienceCard() {
         <Columns vcenter={true}>
           <Columns.Column size="one-fifth">
             <div className="is-flex is-justify-content-center">
-              <Image src="/symbol_basic_color.svg" alt="Logo da PMSF" height={150} width={126} />
+              <Image src="/icon.svg" alt="Minha Logo" height={126} width={126} />
             </div>
           </Columns.Column>
 

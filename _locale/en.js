@@ -1,26 +1,29 @@
 export const en = {
   "/": {
-    siteTitle: "Isaac Pontes | Full-Stack Developer",
+    siteTitle: "Isaac Pontes | Web Developer",
     navbarHome: "Home",
-    navbarAbout: "About",
-    navbarContact: "Contact",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
     navbarBlog: "Blog",
+    navbarContact: "Contact",
 
-    headlineA: "A ",
-    headlineB: "developer ",
-    headlineC: "you can ",
-    headlineD: "count on",
-    subHeadline: "Hello, there! I'm Isaac, a full-stack web developer specialized in PHP, Node.js and React. I build elegant highly efficient websites and applications.",
+    headlineA: "Crafting sites for the ",
+    headlineB: "modern web",
+    subHeadline: "Hello, there! I'm Isaac, a web web developer. I build elegant efficient and visually pleasing websites using technologies like PHP, Node.js and React.",
     knowMyWork: "Know My Work",
     contactMe: "Contact Me",
 
-    aboutTitle: "About Me and My Work",
-    aboutText: "Graduated in Information Systems, I work as a freelancer developer creating modern websites and applications. In my projects I try to write clean and efficient code and create friendly and responsive UIs with a touch of simplicity. Passionate about solving problems, I am always looking for new challenges and the continuous improvement of my skills. So, let's create something awesome?",
-    aboutCode: "Organized and Optimized Code",
+    aboutTitle: "About Me",
+    aboutText: "Graduated in Information Systems, I work as a freelance developer creating websites and web applications for all types of segments. I work in all stages of the development process, from planning and prototyping to coding and implementation. I also work with support, maintenance and updating of existing sites. So, what do you need?",
+    aboutCode: "Organization and Good Practices",
     aboutDesign: "Beautifully and Carefully Crafted",
     aboutSecurity: "Security and Reliability",
     aboutResults: "Focus on Generating Results",
-    aboutGrow: "Always Aiming for the Next Level",
+    aboutGrow: "Always Looking for New Challenges",
+    aboutWebsites: "Websites",
+    aboutEcommerce: "E-commerces",
+    aboutWebApps: "Web Apps",
+    aboutMaintenance: "Maintenance",
 
     portfolioTitle: "Featured Projects",
     portfolioText: "Below you can find some really cool projects I developed and the tools I used. There are also links to the live demos and the source code of the open source projects.",
@@ -33,16 +36,17 @@ export const en = {
     starWarsQuiz: "A questions and answers game about the Star Wars saga. Project developed during Alura's React Immersion.",
     hawkinsDesign: "Website with blog and e-commerce functionalities for an online graphic design agency.",
 
-    blogTitle: "Blog",
+    blogTitle: "Articles",
     blogText: "A project that came up as a way of giving back for everything I learned through the internet community. In it I share a little of my knowledge through articles, tutorials and technology tips in general. Here you will find content about algorithm, logic and programming languages, web development and much more.",
     readMore: "Read More"
   },
   "/about": {
-    siteTitle: "Isaac Pontes | About",
+    siteTitle: "About | Isaac Pontes",
     navbarHome: "Home",
-    navbarAbout: "About",
-    navbarContact: "Contact",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
     navbarBlog: "Blog",
+    navbarContact: "Contact",
 
     technologiesIUseOften: "Technologies I Use Often",
     myProfessionalExperience: "My Professional Experience",
@@ -61,12 +65,21 @@ export const en = {
     bachelorDescription: "During the course I had the opportunity to get familiar with various topics, both in the area of software development, such as data structures, object-oriented programming, etc., as well as related areas, such as mathematics and administration. Despite going quickly through some more advanced topics such as artificial intelligence and internet of things, when I finished the course I chose to go deeper into the development of web applications.",
     technicianDescription: "I was already familiar with the information technology area since I was young, but this was my first significant academic experience. Despite being primarily focused on the infrastructure area, the course also covered a little bit about algorithms and programming languages, which caught up my attention and later on led me to the information systems degree."
   },
-  "/contact": {
-    siteTitle: "Isaac Pontes | Contact",
+  "/portfolio": {
+    siteTitle: "Portfolio | Isaac Pontes",
     navbarHome: "Home",
-    navbarAbout: "About",
-    navbarContact: "Contact",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
     navbarBlog: "Blog",
+    navbarContact: "Contact",
+  },
+  "/contact": {
+    siteTitle: "Contact | Isaac Pontes",
+    navbarHome: "Home",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
+    navbarBlog: "Blog",
+    navbarContact: "Contact",
 
     messageMe: "Send me a message and let's talk.",
     name: "Name",
@@ -79,19 +92,21 @@ export const en = {
     telegram: "Chat on Telegram"
   },
   "/blog": {
-    siteTitle: "Isaac Pontes | Blog",
+    siteTitle: "Blog | Isaac Pontes",
     navbarHome: "Home",
-    navbarAbout: "About",
-    navbarContact: "Contact",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
     navbarBlog: "Blog",
+    navbarContact: "Contact",
 
     blogTitle: "Blog.",
     blogSubtitle: "A statically generated blog using Next.js and Markdown."
   },
   "/posts/[slug]": {
     navbarHome: "Home",
-    navbarAbout: "About",
-    navbarContact: "Contact",
+    navbarAbout: "About Me",
+    navbarBlog: "Portfolio",
     navbarBlog: "Blog",
+    navbarContact: "Contact",
   }
 }

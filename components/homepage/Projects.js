@@ -52,7 +52,7 @@ Projects.Project = ({
     <div className="column is-one-third">
       <div className="card">
         <div className="card-image">
-          <figure className="image is-partially-hidden">
+          <figure className="image">
             <img src={imageUrl} alt="Project Preview" />
           </figure>
         </div>
@@ -71,10 +71,10 @@ Projects.Project = ({
             {technologies.map((value, index) => <span key={index} className="tag is-light">{value}</span>)}
           </div>
         </div>
-        <footer className="card-footer">
+        <footer>
           <div className="card-footer-item buttons">
             {demoLink &&
-              <a href={demoLink} className="button is-primary" target="_blank">
+              <a href={demoLink} className="button is-link" target="_blank">
                 {_f("visitSite")}
               </a>
             }

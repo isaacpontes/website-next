@@ -2,7 +2,7 @@ import { FaFacebookSquare, FaGithub, FaGithubSquare, FaInstagramSquare, FaLinked
 
 function ProfileCard({ githubProfile }) {
   return (
-    <div className="card">
+    <div className="card" data-aos="fade-up">
       <div className="card-image">
         <figure className="image is-square">
           <img src={githubProfile.avatar_url} alt="My GitHub Avatar" />
@@ -12,7 +12,7 @@ function ProfileCard({ githubProfile }) {
         <div className="media">
           <div className="media-content">
             <a href="https://github.com/isaacpontes">
-              <h3 className="title mb-3">
+              <h3 className="title is-5 mb-3">
                 <FaGithub className="mr-2" />
                 {githubProfile.name}
               </h3>
@@ -20,7 +20,7 @@ function ProfileCard({ githubProfile }) {
             <span className="tag is-primary has-text-weight-bold">Full-stack Web Developer</span>
           </div>
         </div>
-        <div className="content is-size-5">
+        <div className="content">
           <p>{githubProfile.bio}</p>
         </div>
       </div>

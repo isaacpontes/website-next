@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { FiGithub, FiInstagram, FiLinkedin, FiSend } from "react-icons/fi";
-import { useIntl } from 'react-intl';
 
 export default function Navbar() {
   const toggleNavbarBurger = () => {
@@ -19,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="navbar is-transparent"
+      className="navbar is-transparent is-spaced"
       role="navigation"
       aria-label="main navigation"
     >
@@ -33,12 +32,24 @@ export default function Navbar() {
 }
 
 Navbar.Brand = () => (
-  <div className="navbar-brand">
+  <div className="navbar-brand is-align-items-center is-justify-content-space-between">
     <Link href="/">
       <a className="navbar-item">
-        <Image src="/symbol_basic_color.svg" width={162} height={100} />
+        <Image src="/site-logo.svg" width={160} height={50} />
       </a>
     </Link>
+
+    <div className="navbar-social-icons is-hidden-tablet">
+      <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
+        <FiGithub />
+      </a>
+      <a href="https://www.linkedin.com/in/isaac-pontes/" className="navbar-item" target="_blank">
+        <FiLinkedin />
+      </a>
+      <a href="https://www.instagram.com/isaac.lfp/" className="navbar-item" target="_blank">
+        <FiInstagram />
+      </a>
+    </div>
 
     <a
       role="button"
@@ -55,34 +66,38 @@ Navbar.Brand = () => (
 );
 
 Navbar.Menu = () => {
-  const { formatMessage } = useIntl();
-  const _f = (id) => formatMessage({ id });
-
   return (
     <div id="navMenu" className="navbar-menu">
       <div className="navbar-start">
+      </div>
+      <div className="navbar-end">
         <Link href="/">
           <a className="navbar-item">
-            {_f("navbarHome")}
+            Início
           </a>
         </Link>
         <Link href="/about">
           <a className="navbar-item">
-            {_f("navbarAbout")}
+            Sobre Mim
+          </a>
+        </Link>
+        <Link href="/portfolio">
+          <a className="navbar-item">
+            Portfólio
           </a>
         </Link>
         <Link href="/contact">
           <a className="navbar-item">
-            {_f("navbarContact")}
+            Contato
           </a>
         </Link>
         <Link href="/blog">
           <a className="navbar-item">
-            {_f("navbarBlog")}
+            Artigos
           </a>
         </Link>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-social-icons is-hidden-mobile">
         <a href="https://github.com/isaacpontes" className="navbar-item" target="_blank">
           <FiGithub />
         </a>
@@ -91,9 +106,6 @@ Navbar.Menu = () => {
         </a>
         <a href="https://www.instagram.com/isaac.lfp/" className="navbar-item" target="_blank">
           <FiInstagram />
-        </a>
-        <a href="https://t.me/isaacpontes_dev" className="navbar-item" target="_blank">
-          <FiSend />
         </a>
       </div>
     </div>

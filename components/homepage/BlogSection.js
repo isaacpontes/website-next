@@ -14,12 +14,12 @@ function BlogSection({ posts }) {
       <Container>
         <Columns hcenter={true}>
           <Columns.Column size={8}>
-            <h2 className="title has-text-primary has-text-centered is-spaced">
+            <h2 className="title is-2 has-text-centered has-title-decoration">
               {_f("blogTitle")}
             </h2>
-            <p className="has-text-centered mb-6">
+            {/* <p className="has-text-centered mb-6">
               {_f("blogText")}
-            </p>
+            </p> */}
           </Columns.Column>
         </Columns>
         <Columns multiline={true}>
